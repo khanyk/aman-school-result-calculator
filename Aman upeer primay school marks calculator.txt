@@ -1,0 +1,90 @@
+// Online C compiler to run C program online
+
+  #include <stdio.h>
+     int main (){
+         
+           
+   float eng,hindi,maths,sci,sst,urdu;
+   float average;
+  int  grade ;
+ 
+   printf("_________________________(AMAN UPPER PRIMARY SCHOOL)_________________________\n\n");
+          printf("Enter the marks of Eng :");
+          scanf("%f",&eng);
+          
+          printf("Enter the marks of Hindi :");
+          scanf("%f",&hindi); 
+         
+          printf("Enter the marks of Maths :");
+          scanf("%f",&maths);
+          
+          printf("Enter the marks of Sci :");
+          scanf("%f",&sci);
+         
+          printf("Enter the marks of Sst :");
+          scanf("%f",&sst);
+         
+          printf("Enter the marks of Urdu :");
+          scanf("%f",&urdu);
+          
+           average = (eng+hindi+maths+sci+sst+urdu)/6;
+  
+             grade =( average / 10 );
+           switch (grade){
+              case 10:
+              case 9:
+                  printf("Grade 'A'\noutstanding performance\n");
+                  break;  
+              case 8:
+              case 7:
+                  printf("Grade 'B'\nExcellent\n");
+                  break;
+              case 6:
+              case 5:
+                  printf("Grade 'C'\nVery Good\n\n");
+                  break; 
+              case 4:
+              case 3:
+                  printf("Grade 'D\nNeeds to work hard\n");
+                  break;
+                  default: 
+                  printf("grade 'F'(fail) ");
+          }
+   
+  // if ((eng+hindi+maths+sci+sst+urdu)/6>=90){
+     // printf("outstanding performance\n");
+ //  }
+          if(eng<33){
+              printf("fail in eng\n");
+          } 
+          if(hindi<33){
+              printf("fail in hindi\n");
+          } 
+          if(maths<33){
+              printf("fail in maths\n");
+          } 
+          if(sci<33){
+              printf("fail in sci\n");
+          }
+          if(sst<33){
+              printf("fail in sst\n");
+          } 
+          if(urdu<33){
+              printf("fail in urdu\n");
+          }
+          /*if(sub1<=33 || sub2<=33 || sub3<=33){
+              printf("you are fail in individual sub\n");*/
+                       
+          if (average>36){
+              printf("you are passed!\n");
+              printf("total marks = %.0f\n",eng+hindi+maths+sci+sst+urdu);
+              printf("percentage = %.2f%\n",(eng+hindi+maths+sci+sst+urdu)/6);
+          } 
+          
+          else {
+              printf("you are failed!\n");
+               printf("total marks = %.0f\n",eng+hindi+maths+sci+sst+urdu);
+              printf("percentage = %.2f%\n",(eng+hindi+maths+sci+sst+urdu)/6);
+          }
+         return 0;
+     }
